@@ -1,0 +1,120 @@
+.navContainer{
+    transition: width 200ms;
+    float: left;
+    height: 100rem;
+}
+.navWrapper {
+    position: relative;
+}
+.open{
+    width: 318px;
+}
+.close{
+    width: 0px;
+}
+.navPanel{
+    position: absolute;
+    background: #0e1a35;
+    width: 318px;
+    right: 0px;
+    height: 100rem;
+}
+.navPanel a{
+    color: #fff;
+}
+.navButtons{
+    position: absolute;
+    right: -79px;
+    top: 49px;
+    width: 26px;
+    height: 20px;
+}
+.navButton{
+    background: url("../../assets/menu_icon.png") no-repeat;
+    width: 26px;
+    height: 20px;
+}
+.navButtonClose{
+    position: absolute;
+    background: url("../../assets/menu_close_icon.png") no-repeat center;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.open .navButtonClose{
+    display: block;
+}
+.serchButton{
+    position: absolute;
+    background: url("../../assets/search_icon.png") no-repeat;
+    width: 24px;
+    height: 24px;
+    display: none;
+    bottom: 0px;
+    margin-left: 66px;
+}
+.open .serchButton{
+    display: block;
+}
+#logo{
+    display: block;
+    background: url("../../assets/logo.png") no-repeat;
+    background-position-x: 41px;
+    background-position-y: 29px;
+    width: 318px;
+    height: 115px;
+    border-bottom: 2px solid #0d172e;
+}
+.navPanel ul li{
+    border-bottom: 2px solid #0d172e;
+}
+.navPanel ul a{
+    display: block;
+    height: 100px;
+    widows: 100%;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 24px;
+    line-height: 100px;
+    padding-left: 90px;
+    transition: background-color 200ms;
+}
+ul>li:nth-child(1) a{
+    background: url("../../assets/nav_icons/home_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+ul>li:nth-child(2) a{
+    background: url("../../assets/nav_icons/workflow_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+ul>li:nth-child(3) a{
+    background: url("../../assets/nav_icons/statictics_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+ul>li:nth-child(4) a{
+    background: url("../../assets/nav_icons/calendar_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+ul>li:nth-child(5) a{
+    background: url("../../assets/nav_icons/users_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+ul>li:nth-last-child(1) a{
+    background: url("../../assets/nav_icons/settings_icon.png") no-repeat;
+    background-position-x: 53px;
+    background-position-y: 37px;
+}
+
+.activeLink, .navPanel ul a:hover{
+    background-color: #122143!important;
+    border-left: 10px solid #5584ff;
+    padding-left: 80px!important;
+    background-position-x: 43px!important;
+}
+

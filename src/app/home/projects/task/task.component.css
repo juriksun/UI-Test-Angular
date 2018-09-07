@@ -1,0 +1,46 @@
+.taskWrapper{
+    border-top: 1px solid #dadee7;
+    height: 108px;
+    padding: 0 49px 0 35px;
+    box-sizing: border-box;
+}
+.taskWrapper > * {
+    display: block;
+}
+.taskAvatar{
+    margin-top:32px;
+    float: left;
+}
+.options{
+    background: url("../../../../assets/options_icon.png") no-repeat center;
+    height: 47px;
+    width: 8px;
+    float: right;
+    margin-top: 33px;
+}
+.textArea{
+    float: left;
+    margin-top: 32px;
+    margin-left:26px;
+}
+.textArea>p:nth-child(1){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-size: 20px;
+    line-height: 20px;
+}
+.textArea>p:nth-child(2){
+    background: url("../../../../assets/time_icon.png") no-repeat center;
+    background-position-x: 0;
+    font-family: 'Times New Roman', Times;
+    font-size: 14px;
+    color: #8492af;
+    line-height: 17px;
+    height: 17px;
+    margin-top: 8px;
+    padding-left: 26px;
+}
+.delayTasks{
+    background: url("../../../../assets/time_delay_icon.png") no-repeat center!important;
+    background-position-x: 0!important;
+    color: #f83c7b!important;
+}

@@ -1,0 +1,47 @@
+.messageWrapper{
+    border-top: 1px solid #dadee7;
+    height: 108px;
+    padding: 0 49px 0 35px;
+    box-sizing: border-box;
+}
+.messageUnreaded{
+    background: #f4f5f8;
+}
+.messageWrapper > * {
+    display: block;
+    float: left;
+}
+.massageAvatar{
+    margin-top:32px;
+}
+.textArea{
+    margin-top: 27px;
+    margin-left: 25px;
+}
+.textArea>p:nth-child(1){
+    font-family: Tahoma;
+    font-size: 14px;
+}
+.textArea>p:nth-child(2){
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.textArea>p>span{
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: #8492af;   
+}
+.buttons>*{
+    height: 16px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.backButton{
+    width: 18px;
+    background: url("../../../../assets/back_icon.png") no-repeat center;
+}
+.settingsButton{
+    width:16px;
+    background: url("../../../../assets/settings_icon.png") no-repeat center;
+    margin-left: 15px;
+}

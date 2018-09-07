@@ -1,0 +1,45 @@
+<div class="project2Wrapper">
+  <h1>Hello John!</h1>
+  <div class="your_sales"></div>
+  <div class="report"></div>
+  <app-article-box [articleName]="'Tasks'">
+    <div counterWrapper class="counterWrapper">
+      <div class="circle primaryColor">{{tasks.length}}</div>
+      <div class="circle dangerColor">{{delayTasks}}</div>
+    </div>
+    <div content class="boxContent">
+        <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+    </div>
+  </app-article-box>
+
+  <app-article-box [articleName]="'Messages'">
+    <div counterWrapper class="counterWrapper">
+      <div *ngIf="unreadedMessages"
+        class="circle primaryColor"
+      >{{unreadedMessages}}</div>
+    </div>
+    <div content>
+      <app-message 
+        *ngFor="let message of messages; let i = index"
+        (messageEmiter)="onMessageEmite($event)"
+        [message]="message"
+        [messageIndex]="i"
+      ></app-message>
+    </div>
+  </app-article-box>
+
+  <app-article-box [articleName]="'Activity'">
+      <div counterWrapper class="counterWrapper">
+        <div class="circle primaryColor">{{activities.length}}</div>
+      </div>
+      <div content>
+          <div class="verticleLine"
+            [ngStyle]="{'height.px': (activities.length -1) * 108}"
+          ></div>
+        <app-activity 
+          *ngFor="let activity of activities"
+          [activity]="activity"
+        ></app-activity>
+      </div>
+    </app-article-box>
+</div>

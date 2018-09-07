@@ -1,0 +1,130 @@
+.homeHeaderContainer{
+    border-right: 1px solid #d4d9e3;
+    border-bottom: 1px solid #d4d9e3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.nav{
+    margin-right: auto;
+    margin-bottom: 14px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid #d4d9e3;
+}
+.nav li:nth-child(1){
+    border-left: 1px solid #dadee7;
+}
+.nav li{
+   border-right: 1px solid #dadee7;
+    height: 99px;
+}
+.nav li a{
+    min-width: 310px;
+    display: block;
+    text-align: center;
+    line-height: 99px;
+    font-family: Tahoma;
+    font-size: 24px;
+    text-decoration: none;
+}
+.nav li a:visited{
+    color: #000;
+}
+@media only screen and (max-width: 1250px) {
+    .homeHeaderContainer>*{
+        margin: 0 auto;
+    }
+    .nav {
+        float: none;
+    }
+    .nav li{
+        flex:100%;
+    }
+    .nav li {
+        border: none;
+        border-top: 1px solid #dadee7;
+    }
+    .nav li:nth-child(1){
+        border-left: none;
+    }
+}
+.setings{
+    float: right;
+    margin-left: auto;
+    margin-right: 33px;
+    height: 84px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 90px;
+}
+.addProject{
+    width: 178px;
+    height: 48px;
+    margin-top: 3px;
+    border-radius: 24px;
+    border: none;
+    background: #5584ff url("../../../assets/add_icon.png") no-repeat  center;
+    color: #fff;
+    background-position-x: 25px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    line-height: 48px;
+    padding-left: 50px;
+    text-align: left;
+}
+.setings>li:nth-child(2) a{
+    background: url("../../../assets/messages_icon.png") no-repeat;
+    width: 33px;
+    height: 23px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 52px;
+}
+.setings>li:nth-child(3) a{
+    background: url("../../../assets/notifications_icon.png") no-repeat;
+    width: 24px;
+    height: 28px;
+    display: block;
+    margin-top: 13px;
+    margin-left: 32px;
+    position: relative;
+}
+.userProfile{
+    width: 55px;
+    height: 55px;
+    background: url("../../../assets/avatars/photo-1444412667101-4eccfdeeff07.png") no-repeat;
+    background-size: 55px;
+    display: block;
+    margin-left: 45px;
+}
+.userProfileOpen{
+    margin-top: 24px;
+    background: url("../../../assets/profile_down_icon.png") no-repeat;
+    width: 12px;
+    height: 6px;
+    display: block;
+    margin-left: 9px;
+}
+.messagesCounter{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #5584ff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Tahoma";
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    left: 13px;
+    bottom: 16px;
+}
+.activeLink, .nav li a:hover{
+    border-bottom: 10px solid #5584ff;
+    height: 89px;
+}

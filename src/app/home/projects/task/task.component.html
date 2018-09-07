@@ -1,0 +1,12 @@
+<div class="taskWrapper">
+  <p class="taskAvatar articleBoxElementAvatar primaryColor">{{task.task_name[0]}}</p>
+  <div class="textArea">
+    <p>{{task.task_name}}</p>
+    <p
+      [ngClass]="{'delayTasks': (task.days_left < 0)}"
+    >
+      {{(task.days_left < 0) ? ((-1) * task.days_left) + ' days delays':task.days_left + ' days left'}}
+    </p>
+  </div>
+  <div class="options"></div>
+</div>

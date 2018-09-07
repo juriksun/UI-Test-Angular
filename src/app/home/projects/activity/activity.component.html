@@ -1,0 +1,9 @@
+<div class="activityWrapper">
+    <p class="activityAvatar articleBoxElementAvatar"
+      [ngStyle]="{'background-image': 'url(' + activity.avatar + ')'}"
+    ></p>
+    <div class="textArea">
+      <p>{{activity.name}} <span>{{activity.activity_type}}</span>{{activity.activity_reference}}</p>
+      <p>{{activity.date}}</p>
+    </div>
+  </div>

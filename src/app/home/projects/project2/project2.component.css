@@ -1,0 +1,63 @@
+.project2Wrapper{
+    background:#f6f7fa;
+    padding-right: auto;
+    padding-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project2Wrapper h1{
+    font-family: "Tahoma";
+    font-size: 48px;
+    flex: 1 100%;
+    font-weight: inherit;
+    margin: 48px 0 0 42px;
+}
+.project2Wrapper>*:not(h1) {
+    align-self: center;
+    margin: 22px;
+}
+.counterWrapper{
+    float: right;
+    position: relative;
+}
+.circle{
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-size: 24px;
+    color: #fff;
+}
+.verticleLine{
+    margin-top: 57px;
+    border-left: 1px solid #dadee7;
+    float: left;
+    position: relative;
+    left: 57px;
+}
+.report{
+    background: url("../../../../assets/report.png");
+    width: 885px;
+    height: 467px;
+    display: block;
+    border: 1px solid #d4d9e3;
+}
+.your_sales{
+    background: url("../../../../assets/your_sales.png");
+    width: 575px;
+    height: 467px;
+    display: block;
+    border: 1px solid #d4d9e3;
+}
+
+
+
+
+
