@@ -1,7 +1,9 @@
 .navContainer{
     transition: width 200ms;
     float: left;
-    height: 100rem;
+    height: 100vh;
+    background: #0e1a35;
+    /* position: fixed; */
 }
 .navWrapper {
     position: relative;
@@ -17,7 +19,7 @@
     background: #0e1a35;
     width: 318px;
     right: 0px;
-    height: 100rem;
+    height: 100vh;
 }
 .navPanel a{
     color: #fff;
